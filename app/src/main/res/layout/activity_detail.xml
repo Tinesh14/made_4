@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3FAFAFA"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+        <ImageView
+            android:id="@+id/Poster_film"
+            android:layout_width="133dp"
+            android:layout_height="215dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/Todo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@android:color/darker_gray"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:id="@+id/item_title_film"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/Poster_film"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Poster_film"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+
+        <TextView
+            android:id="@+id/Release_film"
+            android:layout_width="229dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/item_title_film"
+            android:layout_margin="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/Poster_film"
+            android:text="@string/release_premiere"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Poster_film"
+            app:layout_constraintTop_toBottomOf="@+id/item_title_film" />
+
+        <TextView
+            android:id="@+id/Release_film1"
+            android:layout_width="227dp"
+            android:layout_height="22dp"
+            android:layout_below="@id/Release_film"
+            android:layout_margin="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/Poster_film"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/Language"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Poster_film"
+            app:layout_constraintTop_toBottomOf="@+id/Release_film"
+            tools:text="Release Film" />
+
+        <TextView
+            android:id="@+id/Language"
+            android:layout_width="229dp"
+            android:layout_height="27dp"
+            android:layout_below="@id/Release_film1"
+            android:layout_margin="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/Poster_film"
+            android:text="@string/original_language"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Poster_film"
+            app:layout_constraintTop_toBottomOf="@+id/Release_film1" />
+
+        <TextView
+            android:id="@+id/Language_1"
+            android:layout_width="225dp"
+            android:layout_height="21dp"
+            android:layout_below="@id/Language"
+            android:layout_margin="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/Poster_film"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Poster_film"
+            app:layout_constraintTop_toBottomOf="@+id/Language"
+            tools:text="Language" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="50dp" />
+
+        <TextView
+            android:id="@+id/budge1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Poster_film"
+            android:layout_margin="2dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/popularity"
+            android:textAlignment="inherit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Poster_film"
+            app:layout_constraintVertical_bias="0.056" />
+
+        <TextView
+            android:id="@+id/budge"
+            android:layout_width="364dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/budge1"
+            android:layout_margin="2dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="2dp"
+            android:textAlignment="inherit"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/revenue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/budge1"
+            tools:text="Popularity" />
+
+        <TextView
+            android:id="@+id/revenue1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/budge"
+            android:layout_margin="2dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/vote"
+            android:textAlignment="inherit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/revenue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/budge" />
+
+        <TextView
+            android:id="@+id/revenue"
+            android:layout_width="368dp"
+            android:layout_height="23dp"
+            android:layout_below="@id/revenue1"
+            android:layout_margin="2dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="2dp"
+            android:textAlignment="inherit"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/Actor_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/revenue1"
+            tools:text="vote" />
+
+        <TextView
+            android:id="@+id/Actor_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/revenue"
+            android:layout_margin="2dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/actor"
+            android:textAlignment="inherit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Actor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/revenue" />
+
+        <TextView
+            android:id="@+id/Actor"
+            android:layout_width="368dp"
+            android:layout_height="21dp"
+            android:layout_below="@id/Actor_1"
+            android:layout_margin="2dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="3dp"
+            android:textAlignment="inherit"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/genre1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Actor_1"
+            tools:text="Actor" />
+
+        <TextView
+            android:id="@+id/genre1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Actor"
+            android:layout_margin="2dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/genre"
+            android:textAlignment="inherit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/genre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Actor" />
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="359dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/genre1"
+            android:layout_margin="2dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="2dp"
+            android:textAlignment="inherit"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/Synopsis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genre1"
+            tools:text="Genre" />
+
+        <TextView
+            android:id="@+id/Synopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genre"
+            android:layout_margin="2dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="1dp"
+            android:text="@string/overview"
+            android:textAlignment="inherit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Synopsis_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genre" />
+
+        <TextView
+            android:id="@+id/Synopsis_1"
+            android:layout_width="349dp"
+            android:layout_height="97dp"
+            android:layout_below="@id/Synopsis"
+            android:layout_marginStart="3dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="inherit"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Synopsis"
+            tools:text="Synopsis" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

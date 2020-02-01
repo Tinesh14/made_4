@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3FAFAFA"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/img_item_poster"
+        android:layout_width="110dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="16dp"
+        tools:src="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_toEndOf="@id/img_item_poster"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Judul" />
+
+        <TextView
+            android:id="@+id/item_tglrilis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:ellipsize="end"
+            android:textColor="#74464545"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Tanggal Rilis" />
+
+        <TextView
+            android:id="@+id/item_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            tools:text="Deskripsi" />
+    </LinearLayout>
+</RelativeLayout>

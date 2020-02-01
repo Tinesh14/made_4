@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Submission_4</string>
+    <string name="title_home">Movie</string>
+    <string name="title_dashboard">Tv</string>
+    <string name="title_notifications">Favorites</string>
+        <string name="tab_text_1">MOVIE</string>
+        <string name="tab_text_2">TV SHOWS</string>
+        <string name="release_premiere">Release Premiere :</string>
+        <string name="original_language">Original Language :</string>
+        <string name="popularity">Popularity :</string>
+        <string name="vote">Vote Count :</string>
+        <string name="actor">Actor :</string>
+        <string name="genre">Genre :</string>
+        <string name="overview">Overview :</string>
+        <string name="language_settings">Language Settings</string>
+        <string name="Todo">TODO</string>
+
+</resources>
